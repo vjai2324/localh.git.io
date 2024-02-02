@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+html{
+
+    scroll-behavior: smooth;
+  }
+
+  
+  /* Optional: Style for the anchor links */
+  a {
+    color: rgb(0, 0, 0); /* Change link color as per your preference */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 20px;
+  }
+  
+  /* Optional: Style for the anchor links when hovered */
+  a:hover {
+    background-color: cadetblue;
+    border-radius: 20px;
+   
+  }
+
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4vw ; 
+  }
+  /* Set a minimum font size for h1 */
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 35px; 
+    }
+    .aboutp{
+        font-size: 10px!important;
+    }
+ 
+  }
+
+  .arvo-regular {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .aboutp{
+    font-size: 20px!important;
+    
+  }
+
+
+
+/* project div */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.hover-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-container:hover .hover-message {
+  opacity: 1;
+}
+
+/*in  bages div */
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .child {
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+  }
+  
